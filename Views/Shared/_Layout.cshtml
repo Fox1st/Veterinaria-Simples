@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="~/css/siteVet.css" />
+   <title>@ViewData["Title"] - Veterinária</title>
+</head>
+<body>
+   <header>
+        <h1>Veterinária</h1>
+        <nav class="navegar">
+        <a href="/Home/Index" class="separador">Início</a>
+        <a href="/Home/Servicos" class="separador">Serviços</a>
+        <a href="/Home/Agendamento">Agendamento</a>
+        </nav>
+   </header>
+   <div>
+       <main role="main">
+           @RenderBody()
+       </main>
+   </div>
+   <footer>
+       <div>
+           © 2021 - Veterinária, XXXX-XXXX
+       </div>
+   </footer>
+</body>
+</html>

@@ -1,0 +1,15 @@
+Create database PetVet;
+
+Create table agendamento(
+idAgendamento   IN NOT NULL AUTO INCREMENT,
+nome            VARCHAR (90) NOT NULL,
+fone            VARCHAR(15) NOT NULL,
+data            DATE NOT NULL,  
+animal          VARCHAR (100) NOT NULL,
+necessidade     VARCHAR (300) NOT NULL,
+PRIMARY KEY(idAgendamento));
+
+insert into agendamento (nome, fone, data, animal, necessidade) values
+("Carlos","0000-0000","2021/02/25","Gato","Exames")
+
+Select * from agendamento
